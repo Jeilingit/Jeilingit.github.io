@@ -1,0 +1,96 @@
+/* Estilos CSS para darle un aspecto básico al blog */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+}
+
+h1, h2, h3 {
+  margin-top: 30px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+video{
+  padding: 2px;
+  height: 100%;
+  width: 100%;
+
+}
+
+main {
+ display: block;
+
+
+}
+.cuadro{
+  text-align: right;
+padding: 1px;
+}
+
+.cuadro img {
+  display: flex;
+  display: block;
+  max-width: 30%;
+  margin-bottom: 1px; /* Agrega un margen inferior de 10px a las imágenes */
+  border: 1px solid #ccc; 
+  align-items: left;/* Agrega un borde a las imágenes */
+  max-height: 1000px;
+}
+.cuadro-imagenes img {
+  max-width: 100%;
+  max-height: 400px;
+margin-left: 30px;
+
+}
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.boton:hover {
+  background-color: #0052a3;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
