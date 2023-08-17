@@ -1,10 +1,11 @@
-/* Estilos CSS para darle un aspecto básico al blog */
+/* Estilos CSS para darle un aspecto bÃ¡sico al blog */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-  background-color: white;
+  background-image: url('imagenes/fondo2.jpg'); /* CorrecciÃ³n aquÃ­ */
+  background-size: 800px; /* Ajusta la imagen para cubrir todo el fondo */
 }
 
 h1, h2, h3 {
@@ -41,18 +42,23 @@ nav li {
 }
 video{
   padding: 2px;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
+ 
 
 }
 
 main {
  display: block;
+ 
+ font-weight: bold;
+ background-color:#e2c38a;
+ border-radius: 10px;
 
 
 }
-.cuadro{
-  text-align: right;
+.cuadro {
+  text-align: left;
 padding: 1px;
 }
 
@@ -60,9 +66,9 @@ padding: 1px;
   display: flex;
   display: block;
   max-width: 30%;
-  margin-bottom: 1px; /* Agrega un margen inferior de 10px a las imágenes */
+  margin-bottom: 1px; /* Agrega un margen inferior de 10px a las imÃ¡genes */
   border: 1px solid #ccc; 
-  align-items: left;/* Agrega un borde a las imágenes */
+  align-items: left;/* Agrega un borde a las imÃ¡genes */
   max-height: 1000px;
 }
 .cuadro-imagenes img {
