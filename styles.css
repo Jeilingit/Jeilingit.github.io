@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-  background-image: url('imagenes/fondo2.jpg'); /* CorrecciÃ³n aquÃ­ */
+  background-image: url('fondo2.jpg'); /* CorrecciÃ³n aquÃ­ */
   background-size: 800px; /* Ajusta la imagen para cubrir todo el fondo */
 }
 
