@@ -5,7 +5,7 @@ body {
     background-color: #fff9ec; /* Fondo apagado */
     color: #333; /* Texto oscuro */
     line-height: 1.6;
-    background-image: url('imagenes/fondo2.jpg');
+    background-image: url('fondo2.jpg');
 }
 
 header {
@@ -13,13 +13,13 @@ header {
     padding: 20px;
     text-align: center;
     position: relative;
-    background-image: url('imagenes/fondogriego.jpg'); /* Agregamos posición relativa al encabezado */
+    background-image: url('fondogriego.jpg'); /* Agregamos posición relativa al encabezado */
 }
 
 /* Agregamos estilos para la imagen de fondo */
 header::before {
     content: "";
-    background-image: url('imagenes/fondo2.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('fondo2.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
