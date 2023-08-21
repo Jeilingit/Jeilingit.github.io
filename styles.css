@@ -3,40 +3,50 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 20px;
-  background-image: url('fondo2.jpg'); /* Ruta de la imagen de fondo */
-  background-size: cover;
+  padding: 10px;
+  background-image: url('imagenes/fondo2.jpg');
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position-x: 1%;
   display: block;
-}
-
-h1, h2, h3 {
-  margin-top: 30px;
-}
-
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  color: #333;
 }
 
 header {
-  background-color: wheat;
-  padding: 10px;
+  background-color: #ffaf5a;
+  padding: 20px;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 15px;
+  position: relative;
 }
 
-nav ul {
+/* Agregamos estilos para la imagen de fondo */
+header::before {
+  content: "";
+  background-image: url('imagenes/fondogriego.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Centramos la barra de navegación */
+nav {
+  display: flex;
+  justify-content: center; 
+  color: black;
+}
+
+nav ul.centrar-nav {
   list-style: none;
   padding: 0;
-  text-align: left;
+  text-align: center;
   text-transform: lowercase;
 }
 
@@ -45,16 +55,22 @@ nav li {
   margin-right: 20px;
 }
 
-.centrar-nav ul {
+nav ul {
   list-style: none;
   padding: 0;
   text-align: center;
   text-transform: lowercase;
 }
 
-.centrar-nav li {
-  display: inline-block;
-  margin-right: 20px;
+nav li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none; /* Quita la línea de abajo */
 }
 
 video {
@@ -66,47 +82,99 @@ video {
 main {
   display: block;
   font-weight: bold;
-  background-color: #e2c38a;
+  background-color: #fdfdfd;
   border-radius: 5px;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 20px;
+  margin-top: 5px;
+  background-color: wheat;
+  color: black;
 }
 
-.cuadro {
+/* Estilos para las imágenes con texto */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #ffaf5a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+section .imagen-texto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Espacio entre las imágenes con texto */
+}
+
+section .imagen {
+  flex: 1;
   text-align: center;
-  padding: 10px;
 }
 
-.cuadro button {
-  display: block;
-  margin: 0 auto;
-}
-
-.cuadro img {
-  max-width: 30%;
-  margin-bottom: 1px;
-  border: 1px solid #ccc;
-  max-height: 1000px;
-}
-
-.cuadro-imagenes img {
+section .imagen img {
   max-width: 100%;
-  max-height: 400px;
-  margin-left: 30px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.imagen {
+  margin-bottom: 20px; /* Puedes ajustar este valor según tus preferencias */
+}
+
+section .texto {
+  flex: 2;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section .texto h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section .texto p {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón de "Leer más" en las imágenes con texto */
+section .texto a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #ffaf5a; /* Naranja suave para los botones */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+section .texto a:hover {
+  background-color: #ff8935; /* Cambio de color al pasar el mouse */
 }
 
 button {
   padding: 10px 20px;
-  background-color: #0066cc;
-  color: rgb(248, 248, 248);
-  text-decoration: none;
-  border-radius: 20px;
-  align-items: center;
-  justify-content: center;
+  background-color: #ffaf5a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.boton:hover {
-  background-color: #0052a3;
+button:hover {
+  background-color: #ff8935;
 }
 
 article {
@@ -117,6 +185,7 @@ footer {
   text-align: center;
   margin-top: 50px;
   padding: 10px;
-  background-color: #e2c38a;
+  background-color: #ffaf5a;
+  color: #fff;
   border-radius: 10px;
 }
