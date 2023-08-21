@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 20px;
   background-image: url('fondo2.jpg'); /* CorrecciÃ³n aquÃ­ */
-  background-size: 800px; 
+  background-size: 100%; 
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
