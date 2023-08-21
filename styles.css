@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 10px;
-  background-image: url('imagenes/fondo2.jpg');
+  background-image: url('fondo2.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,7 +23,7 @@ header {
 /* Agregamos estilos para la imagen de fondo */
 header::before {
   content: "";
-  background-image: url('imagenes/fondogriego.jpg');
+  background-image: url('fondogriego.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,7 +70,7 @@ nav li a {
 
 a {
   font-weight: bold;
-  text-decoration: none; /* Quita la línea de abajo */
+  text-decoration: none; 
 }
 
 video {
@@ -90,7 +90,7 @@ main {
   color: black;
 }
 
-/* Estilos para las imágenes con texto */
+
 section {
   margin-bottom: 40px;
   padding: 20px;
