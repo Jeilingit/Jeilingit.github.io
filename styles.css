@@ -9,6 +9,7 @@ body {
   background-size: 100%; 
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: block;
 }
 
 h1, h2, h3 {
