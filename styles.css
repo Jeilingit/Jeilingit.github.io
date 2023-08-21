@@ -5,8 +5,10 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-  background-image: url('fondo2.jpg'); /* CorrecciÃ³n aquÃ­ */
-  background-size: 800px; /* Ajusta la imagen para cubrir todo el fondo */
+  background-image: url('imagenes/fondo2.jpg'); /* CorrecciÃ³n aquÃ­ */
+  background-size: 800px; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1, h2, h3 {
