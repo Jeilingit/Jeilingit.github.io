@@ -49,19 +49,34 @@ header span {
     color: #fff;
 }
 
-/* Estilos para hacer que el video sea responsivo */
-.video {
+/* Estilo para el video en el encabezado */
+.header-video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Proporción 16:9 para videos de YouTube */
-    padding-top: 30px;
+    padding-bottom: 56.25%; /* Proporción 16:9 para formato de YouTube */
     height: 0;
     overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.video iframe {
+/* Estilo para el video dentro del contenedor */
+.header-video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
+.video-container {
+    max-width: 100%;
+    max-height: 300px; /* Ajusta este valor según tu preferencia */
+    overflow: hidden;
+    margin: 0 auto;/* Centra el contenedor en la página */
+  }
+  
+  
+  .video-container iframe {
+    width: 100%;
+    height: 100%; /* Ajustado para llenar el contenedor */
+  }
+  
