@@ -49,18 +49,16 @@ header span {
     color: #fff;
 }
 
-/* Estilo para el video en el encabezado */
-.header-video-container {
+/* Estilos para hacer que el video sea responsivo */
+.video {
     position: relative;
-    padding-bottom: 56.25%; /* Proporción 16:9 para formato de YouTube */
+    padding-bottom: 56.25%; /* Proporción 16:9 para videos de YouTube */
+    padding-top: 30px;
     height: 0;
     overflow: hidden;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
-/* Estilo para el video dentro del contenedor */
-.header-video-container iframe {
+.video iframe {
     position: absolute;
     top: 0;
     left: 0;
