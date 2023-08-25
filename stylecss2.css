@@ -1,25 +1,29 @@
+/* Tu CSS existente aquí */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-  
+    background-color: #fff9ec; /* Fondo apagado */
     color: #333; /* Texto oscuro */
     line-height: 1.6;
-    background-image: url('fondo2.jpg');
+    background-image: url('imagenes/fondo2.jpg');
 }
 
 header {
-  
+    background-color: #ddb080; /* Naranja suave para el encabezado */
     padding: 20px;
     text-align: center;
     position: relative;
-    background-image: url('fondogriego.jpg'); /* Agregamos posición relativa al encabezado */
+    background-image: url('imagenes/fondogriego.jpg'); /* Agregamos posición relativa al encabezado */
+    margin-bottom: 20px; /* Espacio entre el header y el contenido principal */
+    margin-top: 20px; /* Espacio superior para el header */
 }
 
 /* Agregamos estilos para la imagen de fondo */
 header::before {
     content: "";
-    background-image: url('fondo2.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('imagenes/fondo2.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,127 +42,9 @@ header h1 {
     color: #fff;
 }
 
-header p {
-    font-size: 18px;
-    color: #fff;
-}
-
-video {
-    width: 100%;
-    max-height: 400px;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fff; /* Fondo blanco para las secciones */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-section p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-section .imagen-texto {
-    display: flex;
-    flex-direction: row-reverse; /* Coloca la imagen a la derecha */
-    align-items: center;
-    justify-content: space-between;
-}
-
-section .imagen {
-    flex: 1;
-    text-align: center;
-}
-
-section .imagen img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-section .texto {
-    flex: 2;
-    padding: 20px;
-    background-color: #fdfdfd;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-section .texto p {
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #ffaf5a; /* Naranja suave para los botones */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff8935; /* Cambio de color al pasar el mouse */
-}
-
-form {
-    background-color: #fdfdfd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
+header span {
     display: block;
-    margin-bottom: 10px;
+    font-size: 18px;
     font-weight: bold;
-    color: #333;
-}
-
-form input[type="text"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-}
-
-form button[type="submit"] {
-    background-color: #ffaf5a; /* Naranja suave para el botón de enviar */
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button[type="submit"]:hover {
-    background-color: #ff8935; /* Cambio de color al pasar el mouse */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffaf5a; /* Naranja suave para el pie de página */
-    color: #fff;
-    border-radius: 0 0 10px 10px;
 }
