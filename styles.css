@@ -1,3 +1,22 @@
+/* Estilo para el contenedor del video */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción 16:9 para formato de YouTube */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Estilo para el video dentro del contenedor */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Estilos CSS para darle un aspecto básico al blog */
 body {
   font-family: Arial, sans-serif;
@@ -109,15 +128,18 @@ section.autores p {
   margin-bottom: 20px;
 }
 .video-container {
-  max-width: 100%; /* Para que el video se ajuste al ancho de su contenedor */
-  overflow: hidden; /* Evita que el video se desborde */
-  margin: 0 auto; /* Centra el contenedor en la página */
+  max-width: 100%;
+  max-height: 800px; /* Ajusta este valor según tu preferencia */
+  overflow: hidden;
+  margin: 0 auto;/* Centra el contenedor en la página */
 }
 
+
 .video-container iframe {
-  width: 100%; /* El video ocupará el 100% del ancho del contenedor */
-  height: 300px; /* Se ajustará automáticamente a la relación de aspecto del video */
+  width: 100%;
+  height: 100%; /* Ajustado para llenar el contenedor */
 }
+
 nav li {
   display: inline-block;
   margin-right: 20px;
