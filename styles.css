@@ -11,6 +11,7 @@ body {
   background-position-x: 1%;
   display: block;
   color: #333;
+  display: block;
 }
 
 header {
@@ -47,7 +48,7 @@ nav {
 section.historial {
   margin-top: 20px; /* Ajustado para espacio superior */
   padding: 20px;
-  background-color: #ffaf5a;
+  background-color: #ebcaa8;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -98,11 +99,25 @@ section.autores h3 {
   color: #333;
   margin-bottom: 10px;
 }
-
+section.autores h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  align-content: center;
+}
 section.autores p {
   margin-bottom: 20px;
 }
+.video-container {
+  max-width: 100%; /* Para que el video se ajuste al ancho de su contenedor */
+  overflow: hidden; /* Evita que el video se desborde */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
 
+.video-container iframe {
+  width: 100%; /* El video ocupará el 100% del ancho del contenedor */
+  height: 300px; /* Se ajustará automáticamente a la relación de aspecto del video */
+}
 nav li {
   display: inline-block;
   margin-right: 20px;
