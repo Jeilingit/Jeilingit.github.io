@@ -1,191 +1,50 @@
-/* Estilos CSS para darle un aspecto básico al blog */
+/* Tu CSS existente aquí */
+
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 10px;
-  background-image: url('fondo2.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: 1%;
-  display: block;
-  color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9ec; /* Fondo apagado */
+    color: #333; /* Texto oscuro */
+    line-height: 1.6;
+    background-image: url('imagenes/fondo2.jpg');
 }
 
 header {
-  background-color: #ffaf5a;
-  padding: 20px;
-  text-align: center;
-  position: relative;
+    background-color: #ddb080; /* Naranja suave para el encabezado */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-image: url('imagenes/fondogriego.jpg'); /* Agregamos posición relativa al encabezado */
+    margin-bottom: 20px; /* Espacio entre el header y el contenido principal */
+    margin-top: 20px; /* Espacio superior para el header */
 }
 
 /* Agregamos estilos para la imagen de fondo */
 header::before {
-  content: "";
-  background-image: url('fondogriego.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+    content: "";
+    background-image: url('imagenes/fondo2.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Ajusta la opacidad según tus preferencias */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
 }
 
-/* Centramos la barra de navegación */
-nav {
-  display: flex;
-  justify-content: center; 
-  color: black;
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
-nav ul.centrar-nav {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-nav li a {
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-
-a {
-  font-weight: bold;
-  text-decoration: none; 
-}
-
-video {
-  padding: 25px;
-  height: 90%;
-  width: 90%;
-}
-
-main {
-  display: block;
-  font-weight: bold;
-  background-color: #fdfdfd;
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 5px;
-  background-color: wheat;
-  color: black;
-}
-
-
-section {
-  margin-bottom: 40px;
-  padding: 20px;
-  background-color: #ffaf5a;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-section .imagen-texto {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px; /* Espacio entre las imágenes con texto */
-}
-
-section .imagen {
-  flex: 1;
-  text-align: center;
-}
-
-section .imagen img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.imagen {
-  margin-bottom: 20px; /* Puedes ajustar este valor según tus preferencias */
-}
-
-section .texto {
-  flex: 2;
-  padding: 20px;
-  background-color: #fdfdfd;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-section .texto h3 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-section .texto p {
-  margin-bottom: 10px;
-}
-
-/* Estilos para el botón de "Leer más" en las imágenes con texto */
-section .texto a {
-  display: block;
-  padding: 10px 20px;
-  background-color: #ffaf5a; /* Naranja suave para los botones */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-section .texto a:hover {
-  background-color: #ff8935; /* Cambio de color al pasar el mouse */
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #ffaf5a;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #ff8935;
-}
-
-article {
-  margin-bottom: 30px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 10px;
-  background-color: #ffaf5a;
-  color: #fff;
-  border-radius: 10px;
+header span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }
