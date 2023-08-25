@@ -34,10 +34,13 @@ body {
 }
 
 header {
-  background-color: #ffaf5a;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+color: #000000;
   padding: 20px;
   text-align: center;
   position: relative;
+  background-image: url(imagenesdeltema1.jpg);
+
 }
 
 /* Agregamos estilos para la imagen de fondo */
@@ -156,6 +159,7 @@ nav li a {
   font-weight: bold;
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
 
 a {
@@ -255,7 +259,7 @@ section .texto a:hover {
 
 button {
   padding: 10px 20px;
-  background-color: #ffaf5a;
+  background-color: #7a5d3e;
   color: #fff;
   border: none;
   border-radius: 5px;
