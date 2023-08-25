@@ -42,9 +42,10 @@ nav {
   justify-content: center; 
   color: black;
 }
+
 /* Estilos para la sección de Historial */
 section.historial {
-  margin-top: 40px;
+  margin-top: 20px; /* Ajustado para espacio superior */
   padding: 20px;
   background-color: #ffaf5a;
   border-radius: 10px;
@@ -83,8 +84,9 @@ nav ul.centrar-nav {
   text-align: center;
   text-transform: lowercase;
 }
+
 section.autores {
-  margin-top: 40px;
+  margin-top: 20px; /* Ajustado para espacio superior */
   padding: 20px;
   background-color: #ffaf5a;
   border-radius: 10px;
@@ -126,8 +128,8 @@ a {
 
 video {
   padding: 25px;
-  height: 90%;
-  width: 90%;
+  max-width: 100%; /* Ajustado para ser responsivo */
+  height: auto; /* Ajustado para ser responsivo */
 }
 
 main {
@@ -136,14 +138,14 @@ main {
   background-color: #fdfdfd;
   border-radius: 5px;
   padding: 20px;
-  margin-top: 5px;
+  margin-top: 20px; /* Ajustado para espacio superior */
   background-color: wheat;
   color: black;
 }
 
 /* Estilos para las imágenes con texto */
 section {
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* Ajustado para espacio inferior */
   padding: 20px;
   background-color: #ffaf5a;
   border-radius: 10px;
@@ -234,7 +236,7 @@ article {
 
 footer {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px; /* Ajustado para espacio superior */
   padding: 10px;
   background-color: #ffaf5a;
   color: #fff;
